@@ -13,3 +13,5 @@ function errorhandeler(err, req, res, next){
         title :"Error page",
     });
 }
+
+module.exports = {notfoundhandeler, errorhandeler};
