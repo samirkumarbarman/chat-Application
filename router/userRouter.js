@@ -1,7 +1,9 @@
-import express, { application } from "express"
+import { Router } from "express"
 
-const router =express.Router()
+import { getUser } from "./controller/userController.js"
 
-app.get("/user", userController)
+const router = Router()
+
+app.get("/user", getUser)
 
 export default router;

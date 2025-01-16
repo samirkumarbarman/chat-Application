@@ -1,7 +1,9 @@
-import express from "express"
+import { Router } from "express"
 
-const router = express.Router()
+import { getInbox } from "./controller/inboxController.js"
 
-app.get("/inbox", inboxController)
+const router = Router()
+
+app.get("/inbox", getInbox)
 
 export default router;

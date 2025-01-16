@@ -1,8 +1,8 @@
-import express, { application } from "express"
+import { Router } from "express"
 
 import { getlogin } from "../controller/loginController";
 
-const router =express.Router()
+const router = Router()
 
 app.get('/', getlogin)
 

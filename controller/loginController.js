@@ -3,4 +3,4 @@ function getlogin(req, res, next){
         title : "Login - Chat Application"
     })
 }
-module.exports = {getlogin};
+export {getlogin}
